@@ -41,6 +41,15 @@ body {
   margin: 0;
 }
 
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.section__container {
+  width: 50%;
+}
+
 ul {
   list-style: none;
 }
@@ -119,7 +128,9 @@ p {
 
 #home {
   background: no-repeat url('imgs/home-background.png');
-  height: 600px;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
   color: var(--color-white);
   display: flex;
   flex-direction: column;
@@ -146,4 +157,8 @@ p {
 
 .home__btn:hover {
   background: var(--color-orange);
+}
+
+/* About */
+#about {
 }

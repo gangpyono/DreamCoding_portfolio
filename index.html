@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav id="navbar">
+    <nav id="navbar" class="section">
       <div class="navbar__logo">
         <img src="imgs/favicon.png" alt="logo" class="logo__icon" />
         <h2 class="logo__title">gangpyo</h2>
@@ -37,7 +37,7 @@
       </ul>
     </nav>
     <!-- Home -->
-    <section id="home">
+    <section id="home" class="section">
       <img src="imgs/home-img.png" alt="home-img" class="home__img" />
       <h1 class="home__title">Hello,<br />I'm Dream Coder</h1>
       <h2 class="home__description">
@@ -46,140 +46,150 @@
       <button class="home__btn">Contact Me</button>
     </section>
     <!-- About -->
-    <section id="about">
-      <h1 class="about__title">About me</h1>
-      <p class="about__description">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap
-      </p>
-      <ul class="about__majors">
-        <li class="major">
-          <i class="fab fa-html5 major__logo"></i>
-          <h2 class="major__title">Front-end</h2>
-          <p class="major-list">
-            HTML,CSS,Javascript,TypeScript,React,Vue,Web APIs
-          </p>
-        </li>
-        <li class="major">
-          <i class="fas fa-mobile major__logo"></i>
-          <h2 class="major__title">Mobile</h2>
-          <p class="major-list">
-            Android,iOS,React Native, Flutter,java,Swift,Kotlin
-          </p>
-        </li>
-        <li class="major">
-          <i class="fas fa-server major__logo"></i>
-          <h2 class="major__title">Back-end</h2>
-          <p class="major-list">Java,JavaScript,Go,NodeJS,Rest APIs,GraphGL</p>
-        </li>
-      </ul>
+    <section id="about" class="section">
+      <div class="section__container">
+        <h1 class="about__title">About me</h1>
+        <p class="about__description">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap
+        </p>
+        <ul class="about__majors">
+          <li class="major">
+            <i class="fab fa-html5 major__logo"></i>
+            <h2 class="major__title">Front-end</h2>
+            <p class="major-list">
+              HTML,CSS,Javascript,TypeScript,React,Vue,Web APIs
+            </p>
+          </li>
+          <li class="major">
+            <i class="fas fa-mobile major__logo"></i>
+            <h2 class="major__title">Mobile</h2>
+            <p class="major-list">
+              Android,iOS,React Native, Flutter,java,Swift,Kotlin
+            </p>
+          </li>
+          <li class="major">
+            <i class="fas fa-server major__logo"></i>
+            <h2 class="major__title">Back-end</h2>
+            <p class="major-list">
+              Java,JavaScript,Go,NodeJS,Rest APIs,GraphGL
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Career -->
-    <section id="careers">
-      <div class="career">
-        <img class="career__logo" src="imgs/logo-samsung.png" alt="logo" />
-        <div class="career__description">
-          <span class="career__description__position"
-            >Currently working at Samsung as Soft Engineer</span
-          >
-          <span class="career__description__date">2019 sept - Until now</span>
+    <section id="careers" class="section">
+      <div class="section__container">
+        <div class="career">
+          <img class="career__logo" src="imgs/logo-samsung.png" alt="logo" />
+          <div class="career__description">
+            <span class="career__description__position"
+              >Currently working at Samsung as Soft Engineer</span
+            >
+            <span class="career__description__date">2019 sept - Until now</span>
+          </div>
         </div>
-      </div>
-      <div class="career">
-        <img class="career__logo" src="imgs/logo-samsung.png" alt="logo" />
-        <div class="career__description">
-          <span class="career__description__position"
-            >Currently working at Faceboo as Soft Engineer</span
-          >
-          <span class="career__description__date">2019 sept - Until now</span>
+        <div class="career">
+          <img class="career__logo" src="imgs/logo-samsung.png" alt="logo" />
+          <div class="career__description">
+            <span class="career__description__position"
+              >Currently working at Faceboo as Soft Engineer</span
+            >
+            <span class="career__description__date">2019 sept - Until now</span>
+          </div>
         </div>
       </div>
     </section>
     <!-- Skils -->
-    <section id="skills">
-      <h1 class="skills__title">Skills</h1>
-      <h2 class="skills__subTitle">Skills & Attributes</h2>
-      <p class="skills__description">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap
-      </p>
-      <div class="skills-container">
-        <div class="skills__left">
-          <h3 class="left__title">Skills</h3>
-          <ul class="left__skills-list">
-            <li class="left__skill">
-              <span class="left__skill__name">HTML</span>
-              <span class="left__skill__percentage">99%</span>
-              <div class="left__skill__line">
-                <div class="left__skill__line__gage"></div>
-              </div>
-            </li>
-            <li class="left__skill">
-              <span class="left__skill__name">CSS</span>
-              <span class="left__skill__percentage">90%</span>
-              <div class="left__skill__line">
-                <div class="left__skill__line__gage"></div>
-              </div>
-            </li>
-            <li class="left__skill">
-              <span class="left__skill__name">JAVASCRIPT</span>
-              <span class="left__skill__percentage">90%</span>
-              <div class="left__skill__line">
-                <div class="left__skill__line__gage"></div>
-              </div>
-            </li>
-            <li class="left__skill">
-              <span class="left__skill__name">TYPESCRIPT</span>
-              <span class="left__skill__percentage">99%</span>
-              <div class="left__skill__line">
-                <div class="left__skill__line__gage"></div>
-              </div>
-            </li>
-            <li class="left__skill">
-              <span class="left__skill__name">REACT</span>
-              <span class="left__skill__percentage">88%</span>
-              <div class="left__skill__line">
-                <div class="left__skill__line__gage"></div>
-              </div>
-            </li>
-            <li class="left__skill">
-              <span class="left__skill__name">NODEJS</span>
-              <span class="left__skill__percentage">77%</span>
-              <div class="left__skill__line">
-                <div class="left__skill__line__gage"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="skills__right">
-          <div class="skills__right__tools">
-            <h3 class="tools__title">Tools</h3>
-            <ul class="tools__list">
-              <li class="tools__list__item">Android development tools</li>
-              <li class="tools__list__item">iOS develpoment tools</li>
-              <li class="tools__list__item">Sublime Text with Plug-ings</li>
-              <li class="tools__list__item">Visual Studio</li>
-              <li class="tools__list__item">Team Foundation</li>
-              <li class="tools__list__item">Adobe Programs</li>
-              <li class="tools__list__item">Sketch app</li>
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1 class="skills__title">Skills</h1>
+        <h2 class="skills__subTitle">Skills & Attributes</h2>
+        <p class="skills__description">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap
+        </p>
+        <div class="skills-container">
+          <div class="skills__left">
+            <h3 class="left__title">Skills</h3>
+            <ul class="left__skills-list">
+              <li class="left__skill">
+                <span class="left__skill__name">HTML</span>
+                <span class="left__skill__percentage">99%</span>
+                <div class="left__skill__line">
+                  <div class="left__skill__line__gage"></div>
+                </div>
+              </li>
+              <li class="left__skill">
+                <span class="left__skill__name">CSS</span>
+                <span class="left__skill__percentage">90%</span>
+                <div class="left__skill__line">
+                  <div class="left__skill__line__gage"></div>
+                </div>
+              </li>
+              <li class="left__skill">
+                <span class="left__skill__name">JAVASCRIPT</span>
+                <span class="left__skill__percentage">90%</span>
+                <div class="left__skill__line">
+                  <div class="left__skill__line__gage"></div>
+                </div>
+              </li>
+              <li class="left__skill">
+                <span class="left__skill__name">TYPESCRIPT</span>
+                <span class="left__skill__percentage">99%</span>
+                <div class="left__skill__line">
+                  <div class="left__skill__line__gage"></div>
+                </div>
+              </li>
+              <li class="left__skill">
+                <span class="left__skill__name">REACT</span>
+                <span class="left__skill__percentage">88%</span>
+                <div class="left__skill__line">
+                  <div class="left__skill__line__gage"></div>
+                </div>
+              </li>
+              <li class="left__skill">
+                <span class="left__skill__name">NODEJS</span>
+                <span class="left__skill__percentage">77%</span>
+                <div class="left__skill__line">
+                  <div class="left__skill__line__gage"></div>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="skills__right__Etc">
-            <h3 class="Etc__title">Etc</h3>
-            <ul class="Etc__list">
-              <li class="Etc__list__item">Git</li>
-            </ul>
+          <div class="skills__right">
+            <div class="skills__right__tools">
+              <h3 class="tools__title">Tools</h3>
+              <ul class="tools__list">
+                <li class="tools__list__item">Android development tools</li>
+                <li class="tools__list__item">iOS develpoment tools</li>
+                <li class="tools__list__item">Sublime Text with Plug-ings</li>
+                <li class="tools__list__item">Visual Studio</li>
+                <li class="tools__list__item">Team Foundation</li>
+                <li class="tools__list__item">Adobe Programs</li>
+                <li class="tools__list__item">Sketch app</li>
+              </ul>
+            </div>
+            <div class="skills__right__Etc">
+              <h3 class="Etc__title">Etc</h3>
+              <ul class="Etc__list">
+                <li class="Etc__list__item">Git</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+    </div>
     </section>
-    <section id="work">
+    <section id="work" class="section">
+      <div class="section__container">
       <h1 class="work__title">My work</h1>
       <h3 class="work__subtitle">Projects</h3>
       <div class="work__filterBtns">
@@ -214,9 +224,11 @@
           <img src="imgs/projects(ex)/project8.png" alt="project8" />
         </li>
       </ul>
+    </div>
     </section>
 
-    <section id="testimonials">
+    <section id="testimonials" class="section">
+      <div class="section__container">
       <h1 class="testimonials__title">Testimonuals</h1>
       <h3 class="testimonials__subTitle">See what they say about me</h3>
       <ul class="testimonials-list">
@@ -249,8 +261,10 @@
           </div>
         </li>
       </ul>
+    </div>
     </section>
-    <footer id="contact">
+    <footer id="contact" class="section">
+      <div class="section__container">
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">shrkdvy123@gamil.com</h2>
       <div class="contact__icons">
@@ -260,6 +274,7 @@
       <span class="contact__copyRight"
         >2020 Dream Coding Ellie - All rights reserved</span
       >
+    </div>
     </footer>
   </body>
 </html>
