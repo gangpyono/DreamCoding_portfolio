@@ -33,6 +33,7 @@
 /* Universal tags */
 
 * {
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
 
@@ -44,12 +45,24 @@ ul {
   list-style: none;
 }
 
+button {
+  width: 170px;
+  height: 50px;
+  font-size: var(--font-regular);
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+
 /* typography */
 h1 {
   font-size: var(--font-large);
+  margin: 10px 0;
 }
 h2 {
   font-size: var(--font-medium);
+  margin: 10px 0;
 }
 h3 {
   font-size: var(--font-regular);
@@ -100,4 +113,37 @@ p {
 .navbar__menu__item:hover {
   background-color: var(--color-dark-brown);
   outline: 1px solid var(--color-white);
+}
+
+/* Home */
+
+#home {
+  background: no-repeat url('imgs/home-background.png');
+  height: 600px;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.home__description {
+  margin-bottom: 30px;
+}
+
+.home__btn {
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
+  border: 1px solid var(--color-white);
+}
+
+.home__btn:hover {
+  background: var(--color-orange);
 }
