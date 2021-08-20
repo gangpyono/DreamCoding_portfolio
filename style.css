@@ -5,8 +5,8 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  --color-brown: #bcaaa4;
+  --color-dark-brown: #8c7b75;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
@@ -18,8 +18,8 @@
   /* Font size */
   --font-large: 48px;
   --font-medium: 28px;
-  --font-regular: 18px;
-  --font-small: 16px;
+  --font-regular: 20px;
+  --font-small: 18px;
   --font-micro: 14px;
 
   /* Font weight */
@@ -34,4 +34,70 @@
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* typography */
+h1 {
+  font-size: var(--font-large);
+}
+h2 {
+  font-size: var(--font-medium);
+}
+h3 {
+  font-size: var(--font-regular);
+}
+p {
+  font-size: var(--font-small);
+}
+
+/* Navbar */
+
+#navbar {
+  background: var(--color-brown);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo .logo__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar__logo .logo__title {
+  color: var(--color-white);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menu__item {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: var(--font-small);
+  color: var(--color-white);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-dark-brown);
+  outline: 1px solid var(--color-white);
 }
