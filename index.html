@@ -58,21 +58,27 @@
         </p>
         <ul class="about__majors">
           <li class="major">
-            <i class="fab fa-html5 major__logo"></i>
+            <div class="major__logo-container">
+              <i class="fab fa-html5 major__logo"></i>
+            </div>
             <h2 class="major__title">Front-end</h2>
             <p class="major-list">
               HTML,CSS,Javascript,TypeScript,React,Vue,Web APIs
             </p>
           </li>
           <li class="major">
-            <i class="fas fa-mobile major__logo"></i>
+            <div class="major__logo-container">
+              <i class="fas fa-mobile major__logo"></i>
+            </div>
             <h2 class="major__title">Mobile</h2>
             <p class="major-list">
               Android,iOS,React Native, Flutter,java,Swift,Kotlin
             </p>
           </li>
           <li class="major">
-            <i class="fas fa-server major__logo"></i>
+            <div class="major__logo-container">
+              <i class="fas fa-server major__logo"></i>
+            </div>
             <h2 class="major__title">Back-end</h2>
             <p class="major-list">
               Java,JavaScript,Go,NodeJS,Rest APIs,GraphGL
@@ -121,45 +127,57 @@
             <h3 class="left__title">Skills</h3>
             <ul class="left__skills-list">
               <li class="left__skill">
-                <span class="left__skill__name">HTML</span>
-                <span class="left__skill__percentage">99%</span>
+                <div class="left__skill__description">
+                  <span class="description__name">HTML</span>
+                  <span class="description__percentage">99%</span>
+                </div>
                 <div class="left__skill__line">
-                  <div class="left__skill__line__gage"></div>
+                  <div class="left__skill__line__gage" style="width: 99%"></div>
                 </div>
               </li>
               <li class="left__skill">
-                <span class="left__skill__name">CSS</span>
-                <span class="left__skill__percentage">90%</span>
+                <div class="left__skill__description">
+                  <span class="description__name">CSS</span>
+                  <span class="description__percentage">90%</span>
+                </div>
                 <div class="left__skill__line">
-                  <div class="left__skill__line__gage"></div>
+                  <div class="left__skill__line__gage" style="width: 90%"></div>
                 </div>
               </li>
               <li class="left__skill">
-                <span class="left__skill__name">JAVASCRIPT</span>
-                <span class="left__skill__percentage">90%</span>
+                <div class="left__skill__description">
+                  <span class="description__name">JAVASCRIPT</span>
+                  <span class="description__percentage">90%</span>
+                </div>
                 <div class="left__skill__line">
-                  <div class="left__skill__line__gage"></div>
+                  <div class="left__skill__line__gage" style="width: 90%"></div>
                 </div>
               </li>
               <li class="left__skill">
-                <span class="left__skill__name">TYPESCRIPT</span>
-                <span class="left__skill__percentage">99%</span>
+                <div class="left__skill__description">
+                  <span class="description__name">TYPESCRIPT</span>
+                  <span class="description__percentage">99%</span>
+                </div>
                 <div class="left__skill__line">
-                  <div class="left__skill__line__gage"></div>
+                  <div class="left__skill__line__gage" style="width: 99%"></div>
                 </div>
               </li>
               <li class="left__skill">
-                <span class="left__skill__name">REACT</span>
-                <span class="left__skill__percentage">88%</span>
+                <div class="left__skill__description">
+                  <span class="description__name">REACT</span>
+                  <span class="description__percentage">88%</span>
+                </div>
                 <div class="left__skill__line">
-                  <div class="left__skill__line__gage"></div>
+                  <div class="left__skill__line__gage" style="width: 80%"></div>
                 </div>
               </li>
               <li class="left__skill">
-                <span class="left__skill__name">NODEJS</span>
-                <span class="left__skill__percentage">77%</span>
+                <div class="left__skill__description">
+                  <span class="description__name">NODEJS</span>
+                  <span class="description__percentage">77%</span>
+                </div>
                 <div class="left__skill__line">
-                  <div class="left__skill__line__gage"></div>
+                  <div class="left__skill__line__gage" style="width: 77%"></div>
                 </div>
               </li>
             </ul>
@@ -168,8 +186,6 @@
             <div class="skills__right__tools">
               <h3 class="tools__title">Tools</h3>
               <ul class="tools__list">
-                <li class="tools__list__item">Android development tools</li>
-                <li class="tools__list__item">iOS develpoment tools</li>
                 <li class="tools__list__item">Sublime Text with Plug-ings</li>
                 <li class="tools__list__item">Visual Studio</li>
                 <li class="tools__list__item">Team Foundation</li>
@@ -177,104 +193,111 @@
                 <li class="tools__list__item">Sketch app</li>
               </ul>
             </div>
-            <div class="skills__right__Etc">
-              <h3 class="Etc__title">Etc</h3>
-              <ul class="Etc__list">
-                <li class="Etc__list__item">Git</li>
+            <div class="skills__right__etc">
+              <h3 class="etc__title">Etc</h3>
+              <ul class="etc__list">
+                <li class="etc__list__item">Git</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
     <section id="work" class="section">
       <div class="section__container">
-      <h1 class="work__title">My work</h1>
-      <h3 class="work__subtitle">Projects</h3>
-      <div class="work__filterBtns">
-        <button class="filterbtn">All</button>
-        <button class="filterbtn">Front-end</button>
-        <button class="filterbtn">Back-end</button>
-        <button class="filterbtn">Mobile</button>
+        <h1 class="work__title">My work</h1>
+        <h3 class="work__subtitle">Projects</h3>
+        <div class="work__filterBtns">
+          <button class="filterbtn">All</button>
+          <button class="filterbtn">Front-end</button>
+          <button class="filterbtn">Back-end</button>
+          <button class="filterbtn">Mobile</button>
+        </div>
+        <ul class="work__projects">
+          <li class="project">
+            <img src="imgs/projects(ex)/project1.png" alt="project1" />
+          </li>
+          <li class="project">
+            <img src="imgs/projects(ex)/project2.png" alt="project2" />
+          </li>
+          <li class="project">
+            <img src="imgs/projects(ex)/project3.png" alt="project3" />
+          </li>
+          <li class="project">
+            <img src="imgs/projects(ex)/project4.png" alt="project4" />
+          </li>
+          <li class="project">
+            <img src="imgs/projects(ex)/project5.png" alt="project5" />
+          </li>
+          <li class="project">
+            <img src="imgs/projects(ex)/project6.png" alt="project6" />
+          </li>
+          <li class="project">
+            <img src="imgs/projects(ex)/project7.png" alt="project7" />
+          </li>
+          <li class="project">
+            <img src="imgs/projects(ex)/project8.png" alt="project8" />
+          </li>
+        </ul>
       </div>
-      <ul class="work__projects">
-        <li class="project">
-          <img src="imgs/projects(ex)/project1.png" alt="project1" />
-        </li>
-        <li class="project">
-          <img src="imgs/projects(ex)/project2.png" alt="project2" />
-        </li>
-        <li class="project">
-          <img src="imgs/projects(ex)/project3.png" alt="project3" />
-        </li>
-        <li class="project">
-          <img src="imgs/projects(ex)/project4.png" alt="project4" />
-        </li>
-        <li class="project">
-          <img src="imgs/projects(ex)/project5.png" alt="project5" />
-        </li>
-        <li class="project">
-          <img src="imgs/projects(ex)/project6.png" alt="project6" />
-        </li>
-        <li class="project">
-          <img src="imgs/projects(ex)/project7.png" alt="project7" />
-        </li>
-        <li class="project">
-          <img src="imgs/projects(ex)/project8.png" alt="project8" />
-        </li>
-      </ul>
-    </div>
     </section>
 
     <section id="testimonials" class="section">
       <div class="section__container">
-      <h1 class="testimonials__title">Testimonuals</h1>
-      <h3 class="testimonials__subTitle">See what they say about me</h3>
-      <ul class="testimonials-list">
-        <li class="testimonial">
-          <img src="imgs/avatar.png" alt="avatar" class="testimonial__avatar" />
-          <div class="testimonial__content">
-            <p class="testimonial__content__description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap
-            </p>
-            <span class="testimonial__content__name">Ellie</span>
-            <span>/ TigerSpike</span>
-          </div>
-        </li>
-        <li class="testimonial">
-          <img src="imgs/avatar.png" alt="avatar" class="testimonial__avatar" />
-          <div class="testimonial__content">
-            <p class="testimonial__content__description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap
-            </p>
-            <span class="testimonial__content__name">Ellie</span>
-            <span>/ TigerSpike</span>
-          </div>
-        </li>
-      </ul>
-    </div>
+        <h1 class="testimonials__title">Testimonuals</h1>
+        <h3 class="testimonials__subTitle">See what they say about me</h3>
+        <ul class="testimonials-list">
+          <li class="testimonial">
+            <img
+              src="imgs/avatar.png"
+              alt="avatar"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__content">
+              <p class="testimonial__content__description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap
+              </p>
+              <span class="testimonial__content__name">Ellie</span>
+              <span>/ TigerSpike</span>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              src="imgs/avatar.png"
+              alt="avatar"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__content">
+              <p class="testimonial__content__description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap
+              </p>
+              <span class="testimonial__content__name">Ellie</span>
+              <span>/ TigerSpike</span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <footer id="contact" class="section">
       <div class="section__container">
-      <h1 class="contact__title">Let's talk</h1>
-      <h2 class="contact__email">shrkdvy123@gamil.com</h2>
-      <div class="contact__icons">
-        <i class="fab fa-github contact__icon"></i>
-        <img class="contact__icon" src="imgs/velog.png" alt="" />
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">shrkdvy123@gamil.com</h2>
+        <div class="contact__icons">
+          <i class="fab fa-github contact__icon"></i>
+          <img class="contact__icon" src="imgs/velog.png" alt="" />
+        </div>
+        <span class="contact__copyRight"
+          >2020 Dream Coding Ellie - All rights reserved</span
+        >
       </div>
-      <span class="contact__copyRight"
-        >2020 Dream Coding Ellie - All rights reserved</span
-      >
-    </div>
     </footer>
   </body>
 </html>
