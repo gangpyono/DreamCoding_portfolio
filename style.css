@@ -197,3 +197,27 @@ p {
   color: var(--color-dark-brown);
   transform: rotate(30deg) scale(1.1);
 }
+
+/* Career */
+
+#careers .section__container {
+  margin: 0;
+}
+
+.career {
+  margin: 20px;
+  display: flex;
+}
+
+.career__description {
+  color: var(--color-light-grey);
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.career__description__date {
+  font-size: var(--font-micro);
+  margin-top: 10px;
+}
