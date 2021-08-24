@@ -18,7 +18,7 @@
   /* Font size */
   --font-large: 48px;
   --font-medium: 28px;
-  --font-regular: 20px;
+  --font-regular: 22px;
   --font-small: 18px;
   --font-micro: 14px;
 
@@ -47,13 +47,14 @@ body {
 }
 
 .section__container {
-  margin-top: 50px;
+  margin: 50px 0;
   width: 50%;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -220,4 +221,64 @@ p {
 .career__description__date {
   font-size: var(--font-micro);
   margin-top: 10px;
+}
+
+/* Skills */
+
+#skills {
+  background: var(--color-yellow);
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  color: var(--color-white);
+  background: var(--color-grey);
+}
+.left__title,
+.tools__title,
+.etc__title {
+  margin: 10px 0px;
+}
+
+.skills__left {
+  flex-basis: 60%;
+  padding: 20px;
+  background: var(--color-light-grey);
+}
+
+.left__skill {
+  margin: 20px 0;
+}
+.left__skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left__skill__line {
+  margin-top: 7px;
+  height: 1px;
+  background: var(--color-dark-grey);
+}
+
+.left__skill__line__gage {
+  height: 1px;
+  background: var(--color-orange);
+}
+
+.skills__right {
+  flex-basis: 40%;
+}
+
+.skills__right__tools {
+  background: var(--color-dark-grey);
+}
+
+.skills__right__tools .tools__list__item {
+  margin: 5px 0;
+}
+
+.skills__right__tools,
+.skills__right__etc {
+  padding: 20px;
 }
