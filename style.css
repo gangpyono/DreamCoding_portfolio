@@ -47,10 +47,16 @@ body {
 }
 
 .section__container {
+  margin-top: 50px;
   width: 50%;
 }
 
 ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
   list-style: none;
 }
 
@@ -161,4 +167,33 @@ p {
 
 /* About */
 #about {
+  text-align: center;
+}
+
+.about__majors {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.major__logo-container {
+  font-size: 70px;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+  color: var(--color-blue);
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.major__logo {
+  transition: all 300ms ease-in;
+}
+
+.major__logo-container:hover .major__logo {
+  color: var(--color-dark-brown);
+  transform: rotate(30deg) scale(1.1);
 }
