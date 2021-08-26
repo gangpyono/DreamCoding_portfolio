@@ -157,6 +157,7 @@ p {
 }
 
 .home__btn {
+  width: 200px;
   color: var(--color-white);
   font-weight: var(--weight-bold);
   border: 1px solid var(--color-white);
@@ -411,4 +412,29 @@ p {
 
 .testimonial__content__name {
   color: var(--color-dark-brown);
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  background: var(--color-brown);
+}
+
+.contact__icons {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.contact__icon {
+  font-size: 50px;
+  margin: 0px 4px;
+  cursor: pointer;
+}
+
+.contact__icon:hover {
+  color: var(--color-yellow);
+}
+.contact__copyRight {
+  display: inline-block;
 }
