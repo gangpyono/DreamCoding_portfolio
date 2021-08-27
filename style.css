@@ -134,10 +134,8 @@ p {
 /* Home */
 
 #home {
-  background: no-repeat url('imgs/home-background.png');
-  background-size: cover;
+  background: no-repeat center/cover url('imgs/home-background.png');
   height: 1000px;
-  width: 100%;
   color: var(--color-white);
   display: flex;
   flex-direction: column;
@@ -437,4 +435,17 @@ p {
 }
 .contact__copyRight {
   display: inline-block;
+}
+
+/* etc */
+.arrow-btn {
+  font-size: 100px;
+  position: fixed;
+  right: 150px;
+  bottom: 100px;
+  color: var(--color-white);
+  background: var(--color-brown);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0 20px;
 }
