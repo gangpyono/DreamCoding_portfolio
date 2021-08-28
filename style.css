@@ -89,7 +89,7 @@ p {
 
 /* Navbar */
 
-#navbar {
+#Navbar {
   background: var(--color-brown);
   display: flex;
   justify-content: space-between;
@@ -133,7 +133,7 @@ p {
 
 /* Home */
 
-#home {
+#Home {
   background: no-repeat center/cover url('imgs/home-background.png');
   height: 1000px;
   color: var(--color-white);
@@ -166,7 +166,7 @@ p {
 }
 
 /* About */
-#about {
+#About {
   text-align: center;
 }
 
@@ -200,7 +200,7 @@ p {
 
 /* Career */
 
-#careers .section__container {
+#Careers .section__container {
   margin: 0;
 }
 
@@ -224,7 +224,7 @@ p {
 
 /* Skills */
 
-#skills {
+#Skills {
   background: var(--color-yellow);
   text-align: center;
 }
@@ -284,7 +284,7 @@ p {
 
 /* Work */
 
-#work {
+#Work {
   text-align: center;
 }
 
@@ -370,7 +370,7 @@ p {
 
 /* Testimonials */
 
-#testimonials {
+#Testimonials {
   background: var(--color-light-white);
   text-align: center;
 }
@@ -413,7 +413,7 @@ p {
 }
 
 /* Contact */
-#contact {
+#Contact {
   text-align: center;
   background: var(--color-brown);
 }
