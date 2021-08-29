@@ -94,6 +94,14 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  width: 100%;
+  position: fixed;
+  transition: all 300ms ease-in;
+}
+
+#Navbar.dark-mode {
+  background: var(--color-dark-brown);
+  padding: 25px;
 }
 
 .navbar__logo {
