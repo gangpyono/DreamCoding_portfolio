@@ -15,6 +15,13 @@ const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
   const link = event.target.dataset.link;
   scrollIntoView(link);
+  navbarMenu.classList.remove('active');
+});
+
+//navbar버튼 클릭시 메뉴 보이기
+const navbarBtn = document.querySelector('.navbar__menu-btn');
+navbarBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('active');
 });
 
 //홈화면 버튼클릭시 contact로 이동

@@ -140,6 +140,11 @@ p {
   outline: 1px solid var(--color-white);
 }
 
+.navbar__menu-btn {
+  display: none;
+  position: absolute;
+  right: 6px;
+}
 /* Home */
 
 #Home {
@@ -471,15 +476,20 @@ p {
   padding: 5px 15px;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 760px) {
   #Navbar {
-    z-index: 1;
-    background: red;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    width: 100%;
-    position: fixed;
-    transition: all 300ms ease-in;
+    flex-direction: column;
+  }
+
+  .navbar__menu {
+    text-align: center;
+    display: none;
+  }
+  .navbar__menu.active {
+    display: block;
+  }
+  .navbar__menu-btn {
+    display: block;
+    width: 70px;
   }
 }
