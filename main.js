@@ -17,6 +17,53 @@ navbarMenu.addEventListener('click', (event) => {
   scrollIntoView(link);
 });
 
+//홈화면 버튼클릭시 contact로 이동
+const contactBtn = document.querySelector('.home__btn');
+contactBtn.addEventListener('click', (event) => {
+  const link = event.target.dataset.link;
+  scrollIntoView(link);
+});
+
+//project 필터링 버튼 클릭시 해당 project만 나타내기
+const workBtns = document.querySelector('.work__filterBtns');
+const projectsContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+
+workBtns.addEventListener('click', (event) => {
+  const target = event.target;
+  const key = target.dataset.key;
+  if (key == null) return;
+
+  const selectedBtn = document.querySelector('.filterBtn.selected');
+  if (!target.classList.contains('selected')) {
+    target.classList.add('selected');
+    selectedBtn.classList.remove('selected');
+  }
+
+  projectsContainer.classList.add('scale-in');
+  setTimeout(() => {
+    if (key === '*') {
+      projects.forEach((project) => {
+        project.classList.remove('none');
+      });
+      projectsContainer.classList.remove('scale-in');
+    } else
+      projects.forEach((project) => {
+        if (project.dataset.key !== key) project.classList.add('none');
+        else project.classList.remove('none');
+      });
+    projectsContainer.classList.remove('scale-in');
+  }, 300);
+});
+
+// 보이는 화면의 화살표클릭시 맨위로 자동 스크롤
+
+const arrowBtn = document.querySelector('.arrow-btn');
+arrowBtn.addEventListener('click', () => {
+  scrollIntoView('#Home');
+});
+
+// 스크롤 이동
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({
@@ -24,10 +71,3 @@ function scrollIntoView(selector) {
     behavior: 'smooth',
   });
 }
-
-//홈화면 버튼클릭시 contact로 이동
-const contactBtn = document.querySelector('.home__btn');
-contactBtn.addEventListener('click', (event) => {
-  const link = event.target.dataset.link;
-  scrollIntoView(link);
-});
