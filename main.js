@@ -53,12 +53,12 @@ workBtns.addEventListener('click', (event) => {
       projects.forEach((project) => {
         project.classList.remove('none');
       });
-      projectsContainer.classList.remove('scale-in');
     } else
       projects.forEach((project) => {
         if (project.dataset.key !== key) project.classList.add('none');
         else project.classList.remove('none');
       });
+
     projectsContainer.classList.remove('scale-in');
   }, 300);
 });
