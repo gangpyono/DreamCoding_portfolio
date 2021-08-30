@@ -473,7 +473,7 @@ p {
 .arrow-btn {
   font-size: 50px;
   position: fixed;
-  right: 150px;
+  right: 60px;
   bottom: 100px;
   color: var(--color-white);
   background: var(--color-brown);
