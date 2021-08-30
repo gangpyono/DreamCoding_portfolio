@@ -31,21 +31,20 @@ contactBtn.addEventListener('click', (event) => {
   scrollIntoView(link);
 });
 
-//project 필터링 버튼 클릭시 해당 project만 나타내기
+//project 필터링버튼 클릭시 해당 project만 나타내기
 const workBtns = document.querySelector('.work__filterBtns');
 const projectsContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
 
 workBtns.addEventListener('click', (event) => {
-  const target = event.target;
-  const key = target.dataset.key;
+  const key = event.target.dataset.key || event.target.parentNode.dataset.key;
   if (key == null) return;
 
+  const target =
+    event.target.nodeName == 'BUTTON' ? event.target : event.target.parentNode;
   const selectedBtn = document.querySelector('.filterBtn.selected');
-  if (!target.classList.contains('selected')) {
-    target.classList.add('selected');
-    selectedBtn.classList.remove('selected');
-  }
+  selectedBtn.classList.remove('selected');
+  target.classList.add('selected');
 
   projectsContainer.classList.add('scale-in');
   setTimeout(() => {
