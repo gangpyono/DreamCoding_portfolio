@@ -7,6 +7,7 @@
   --color-dark-white: #bdbdbd;
   --color-brown: #bcaaa4;
   --color-dark-brown: #8c7b75;
+  --color-light-brown: #795548;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
@@ -93,12 +94,16 @@ p {
 #Navbar {
   z-index: 1;
   background: var(--color-brown);
-  display: flex;
-  justify-content: space-between;
   padding: 20px;
   width: 100%;
   position: fixed;
   transition: all 300ms ease-in;
+}
+
+#Navbar .section__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
 #Navbar.dark-mode {
@@ -254,7 +259,7 @@ p {
   background: var(--color-grey);
 }
 
-. .left__title,
+.left__title,
 .tools__title,
 .etc__title {
   margin: 10px 0px;
@@ -484,7 +489,7 @@ p {
 
 @media screen and (max-width: 760px) {
   /* Navbar */
-  #Navbar {
+  #Navbar .section__container {
     flex-direction: column;
   }
 
@@ -498,6 +503,9 @@ p {
   .navbar__menu-btn {
     display: block;
     width: 70px;
+  }
+  .navbar__menu__item:hover {
+    background: var(--color-light-brown);
   }
 
   /* About Me */
