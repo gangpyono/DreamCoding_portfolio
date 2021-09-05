@@ -17,11 +17,11 @@
   --color-black: #000000;
 
   /* Font size */
-  --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 22px;
-  --font-small: 18px;
-  --font-micro: 14px;
+  --font-large: 68px;
+  --font-medium: 38px;
+  --font-regular: 32px;
+  --font-small: 25px;
+  --font-micro: 19px;
 
   /* Font weight */
   --weight-bold: 700;
@@ -142,7 +142,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-brown);
+  background-color: var(--color-light-brown);
   outline: 1px solid var(--color-white);
 }
 
@@ -162,16 +162,17 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 150px;
 }
 
 .home__img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
 }
 
 .home__description {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .home__btn {
@@ -224,7 +225,7 @@ p {
 
 /* Career */
 
-#Careers .section__container {
+.career__container {
   margin: 0;
 }
 

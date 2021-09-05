@@ -1,9 +1,9 @@
 'use strict';
 
-//스크롤 내릴시 보이는 페이지에 냅바 고정
+//스크롤 내릴시 냅바 고정 및 변경
 const navbar = document.querySelector('#Navbar');
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset >= navbar.getBoundingClientRect().height) {
+  if (window.scrollY >= navbar.getBoundingClientRect().height) {
     navbar.classList.add('dark-mode');
   } else {
     navbar.classList.remove('dark-mode');
@@ -70,11 +70,19 @@ arrowBtn.addEventListener('click', () => {
   scrollIntoView('#Home');
 });
 
-// 스크롤 이동
-function scrollIntoView(selector) {
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({
-    block: 'center',
-    behavior: 'smooth',
+// //섹션 이동시 메뉴탭 자동 이동.
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 1,
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    console.log(entry.target);
   });
-}
+}, options);
+
+const sections = document.querySelectorAll('.section');
+sections.forEach((section) => observer.observe(section));
