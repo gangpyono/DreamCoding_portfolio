@@ -14,9 +14,10 @@ window.addEventListener('scroll', () => {
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
   const link = event.target.dataset.link;
+  const target = event.target;
   if (link == null) return;
   scrollIntoView(link);
-  navbarMenu.classList.remove('active');
+  selectNavMenu(target);
 });
 
 //navbar버튼 클릭시 메뉴 보이기
@@ -64,25 +65,77 @@ workBtns.addEventListener('click', (event) => {
 });
 
 // 보이는 화면의 화살표클릭시 맨위로 자동 스크롤
-
 const arrowBtn = document.querySelector('.arrow-btn');
 arrowBtn.addEventListener('click', () => {
   scrollIntoView('#Home');
 });
 
-// //섹션 이동시 메뉴탭 자동 이동.
+// 스크롤 이동
+function scrollIntoView(link) {
+  const scrollto = document.querySelector(link);
+  const navMenu = document.querySelector(
+    `.navbar__menu li[data-link='${link}']`
+  );
+  scrollto.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  selectNavMenu(navMenu);
+}
+
+// 섹션 이동시 메뉴탭 자동 이동.
+
+const sectionIds = [
+  '#Home',
+  '#About',
+  '#Skills',
+  '#Work',
+  '#Testimonials',
+  '#Contact',
+];
+
+const sections = document.querySelectorAll('.section');
+const navItems = document.querySelectorAll('li[data-link]');
+
+let selectedNavIndex = 0;
+let selectedNavItem = navItems[0];
+
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting && entry.intersectionRatio > 0) {
+      const id = entry.target.id;
+      let index = sectionIds.indexOf(`#${id}`);
+      if (entry.boundingClientRect.y < 0) {
+        selectedNavIndex = index + 1;
+      } else {
+        selectedNavIndex = index - 1;
+      }
+    }
+  });
+};
 
 const options = {
   root: null,
+  threshold: 0.3,
   rootMargin: '0px',
-  threshold: 1,
 };
 
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    console.log(entry.target);
-  });
-}, options);
-
-const sections = document.querySelectorAll('.section');
+const observer = new IntersectionObserver(callback, options);
 sections.forEach((section) => observer.observe(section));
+
+window.addEventListener('wheel', () => {
+  if (window.scrollY == 0) {
+    // 맨위
+    selectedNavIndex = 0;
+  } else if (
+    window.scrollY + window.innerHeight ==
+    document.body.clientHeight
+  ) {
+    //맨끝
+    selectedNavIndex = navItems.length - 1;
+  }
+  selectNavMenu(navItems[selectedNavIndex]);
+});
+
+function selectNavMenu(selected) {
+  selectedNavItem.classList.remove('active');
+  selected.classList.add('active');
+  selectedNavItem = selected;
+}
